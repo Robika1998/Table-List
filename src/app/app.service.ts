@@ -6,7 +6,8 @@ import { Todo } from './todo';
   providedIn: 'root'
 })
 export class AppService {
-    [x: string]: any;
+    // [x: string]: any;
+
   updateTodoWithDelay(arg0: { completed: any; id?: string; task: string; }) {
     throw new Error('Method not implemented.');
   }

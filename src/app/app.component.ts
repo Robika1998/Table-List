@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
           this.loading = false;
         }
       );
-    }, 2000); // 2000 milliseconds (2 seconds) delay
+    }, 2000); 
   }
 
   deleteTodoWithDelay(e: unknown, id: Todo['id']) {
@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
           this.loading = false;
         }
       );
-    }, 2000); // 2000 milliseconds (2 seconds) delay
+    }, 2000); 
   }
 
  async addTodoWithDelay()  {
@@ -81,63 +81,8 @@ export class AppComponent implements OnInit {
           this.loading = false;
         }
       );
-  // 2000 milliseconds (2 seconds) delay
+
   }
 }
 
-// import { Component, OnInit, ViewChild } from '@angular/core';
-// import { Todo } from './todo';
-// import { AppService } from './app.service';
-// import { response } from 'express';
-// import { CheckboxChangeEvent } from 'primeng/checkbox';
 
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './app.component.html',
-//   styleUrl: './app.component.css'
-// })
-// export class AppComponent implements OnInit {
-
-//   @ViewChild('todoTask') todoTask: any;
-
-//   task = '';
-//   todos: Todo[] = [];
-
-
-//   constructor(private appService: AppService) {
-
-//   }
-
-//   ngOnInit(): void {
-//     this.getList();
-//   }
-
-//   getList() {
-//    this.appService.getTodoList().subscribe(
-//     response => {
-//       this.todos = response
-//     }
-//    )
-//   }
-
-//   updateTodo(e: CheckboxChangeEvent, todo: Todo) {
-//     this.appService.updateTodo({ ...todo, completed: e.checked }).subscribe(
-//       response => console.log(response)
-//     )
-//   }
-
-//   deleteTodo(e: unknown, id: Todo['id']){
-//     this.appService.deleteTodo(id).subscribe(
-//       response => this.getList()
-//     )
-//   }
-
-//   addTodo() {
-//     this.appService.addTodo({ task: this.task, completed: false}).subscribe(
-//       response => {
-//         this.todoTask.reset();
-//         this.getList();
-//       }
-//     )
-//   }
-// }

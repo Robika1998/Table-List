@@ -3,6 +3,11 @@
     {
       "id": "f1c1",
       "task": "yukyku",
+      "completed": true
+    },
+    {
+      "id": "5c98",
+      "task": "few",
       "completed": false
     }
   ]
